@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* سفارشی‌سازی دکمه‌های Navigation */
+.swiper-button-next, .swiper-button-prev {
+    background-color: #ffffff; /* رنگ پس زمینه سفید */
+    border-radius: 50%; /* دایره‌ای کردن دکمه */
+    width: 40px; /* عرض دکمه */
+    height: 40px; /* ارتفاع دکمه */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* سایه در اطراف دکمه */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; /* رنگ فلش‌ها */
+    font-size: 16px; /* اندازه فلش */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 16px; /* اندازه آیکون فلش */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .swiper-button-next {
+    right: 10px; /* فاصله از راست */
   }
-}
+  
+  .swiper-button-prev {
+    left: 10px; /* فاصله از چپ */
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #000000; /* تغییر پس زمینه به مشکی هنگام hover */
+    color: white; /* تغییر رنگ فلش به سفید هنگام hover */
+  }
+  
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.5; /* شفافیت کمتر برای دکمه‌های غیرفعال */
+  }
+  
