@@ -5,8 +5,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 
 export default function PricingPlanCarousel() {
-    // Common plan details
-    const plans = [
+     const plans = [
         {
             title: "BASIC",
             price: "FREE",

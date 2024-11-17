@@ -2,11 +2,14 @@ import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { BiWorld } from 'react-icons/bi';
 
-export default function Footer() {
+export default function Footer({ variant = 'default' }) {
   return (
-    <div className="w-full  py-8 px-4 sm:px-8 lg:px-20 mt-20 relative">
+    <div className={`w-full  py-8 px-4 sm:px-8 lg:px-20 mt-20 relative ${variant === "white" ? "bg-none"
+        : "bg-gradient-to-r from-[rgba(255,182,193,0.2)] via-[rgba(235,112,235,0.2)] to-[rgba(103,217,255,0.2)]"
+      }`}>
+
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
-        
+
         {/* Logo */}
         <div className="mb-6 sm:mb-0 lg:flex hidden  flex-col gap-4">
           <div className="w-16 h-16 bg-pink-500 rounded-lg flex items-center justify-center shadow-md">
@@ -17,7 +20,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-wrap text-center sm:text-left justify-center gap-10 text-gray-800">
+        <div className={`flex flex-wrap text-center sm:text-left justify-center gap-10 ${variant === "white" ? "text-white" : "text-gray-800"}`}>
           <div>
             <h2 className="font-semibold mb-2">COMPANY</h2>
             <ul className="space-y-1">
@@ -45,7 +48,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Social Icons and Language Dropdown */}
         <div className="flex flex-col items-center space-y-6 mt-6 sm:mt-0">
           <div className="flex space-x-4 text-blue-600">

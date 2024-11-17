@@ -1,37 +1,49 @@
 /* App.css */
 
-/* سفارشی‌سازی دکمه‌های Navigation */
 .swiper-button-next, .swiper-button-prev {
-    background-color: #ffffff; /* رنگ پس زمینه سفید */
-    border-radius: 50%; /* دایره‌ای کردن دکمه */
-    width: 40px; /* عرض دکمه */
-    height: 40px; /* ارتفاع دکمه */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* سایه در اطراف دکمه */
+    background-color: #ffffff; 
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black; /* رنگ فلش‌ها */
-    font-size: 16px; /* اندازه فلش */
+    color: black;  
+    font-size: 16px;  
   }
   
   .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 16px; /* اندازه آیکون فلش */
+    font-size: 16px; 
   }
   
   .swiper-button-next {
-    right: 10px; /* فاصله از راست */
+    right: 10px;  
   }
   
   .swiper-button-prev {
-    left: 10px; /* فاصله از چپ */
+    left: 10px; 
   }
   
   .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: #000000; /* تغییر پس زمینه به مشکی هنگام hover */
-    color: white; /* تغییر رنگ فلش به سفید هنگام hover */
+    background-color: #000000;  
+    color: white;  
   }
   
   .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 0.5; /* شفافیت کمتر برای دکمه‌های غیرفعال */
+    opacity: 0.5;  
   }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
   
